@@ -20,7 +20,6 @@
     <tr  >
        <br>
         <thead>
-         <th> id </th>
          <th> Nombre </th>
          <th> Email </th>
         </thead>
@@ -36,9 +35,8 @@
           ?>
 
         <tr>
-         <td><?php echo $mostrar['id'] ?></td>
-         <td><?php echo $mostrar['nombre'] ?></td>
-         <td><?php echo $mostrar['email'] ?></td>
+           <td><?php echo $mostrar['nombre'] ?></td>
+           <td><?php echo $mostrar['email'] ?></td>
         </tr>
 
         <?php

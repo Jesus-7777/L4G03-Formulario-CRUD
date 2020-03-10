@@ -17,8 +17,9 @@ static $db="personas";
 public static function query($sql){
    //$con= new mysqli('localhost','root','','personas');
     $con =new mysqli(self::$host,self::$user,self::$password,self::$db);
-
-    return $con->query($sql);
+   $result = $con->query($sql);
+   $con->close();
+    return $result;
 }
 }
 ?>
